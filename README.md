@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a deep learning model for image classification using a subset of the COCO dataset. The task was simplified from object detection to classification by extracting bounding boxes and converting them into standalone image samples.
+This project, developed by **Uzbek Imtiaz Cheema**, implements a deep learning model for image classification using a subset of the COCO dataset. The task was simplified from object detection to classification by extracting bounding boxes and converting them into standalone image samples.
 
 The model classifies five object categories:
 
@@ -44,6 +44,15 @@ A subset of the COCO 2017 dataset was used, producing **7397 cropped samples** w
 * Best validation accuracy: **46.8%**
 * Final evaluation accuracy: **58.7%**
 
+## Key Learnings
+
+* Implementing **residual (skip) connections** improves training stability in deeper networks
+* Real-world datasets like COCO introduce **class imbalance challenges** that significantly affect model performance
+* Techniques such as **weighted sampling and data augmentation** help but do not fully solve imbalance issues
+* Model performance is heavily influenced by **class distribution and data quality**
+* Training on **CPU-only environments** requires careful trade-offs in model complexity and training time
+* Converting object detection data into classification tasks is a practical way to simplify complex problems
+
 ## Limitations
 
 * Class imbalance impacts performance
@@ -61,9 +70,10 @@ A subset of the COCO 2017 dataset was used, producing **7397 cropped samples** w
 * Python
 * PyTorch
 
-## Context
+## Author
 
-University coursework project (COMP1827) – University of Greenwich
+**Uzbek Imtiaz Cheema**
+University of Greenwich – Computer Science
 
 ---
 
